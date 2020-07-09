@@ -1,0 +1,78 @@
+
+import sys
+print(sys.version)
+3.7.6 (default, Jan  8 2020, 20:23:39) [MSC v.1916 64 bit (AMD64)]
+p
+import matplotlib.pyplot as plt
+b
+%matplotlib
+Using matplotlib backend: Qt5Agg
+%matplotlib inline
+np
+import numpy as np
+30
+x = np.linspace(0, 10, 30)
+y = np.sin(x)
+plt.scatter(x, y, label = "Function: sin(x)" )
+plt.title('Scatter Plot in MatPlotLib')
+plt.legend()
+plt.show()
+
+plt.figure(figsize=(10,6))
+plt.scatter(x, y, label = "y = sin(x)" )
+plt.xlabel('X Values')
+plt.ylabel('Y Values')
+plt.title('Scatter Plot in MatPlotLib')
+plt.legend()
+plt.show()
+
+np.random.seed(100)
+x = np.arange(10)
+y = np.random.randn(10)
+plt.figure(figsize=(10,6))
+plt.bar(x, y, label='Sample Data')
+plt.xlabel('X Values - Categories')
+plt.ylabel('Y Values - Quantities')
+plt.title('Bar Plot in MatPlotLib')
+plt.legend()
+plt.show()
+
+# Set seed for reproducability
+np.random.seed(100)
+​
+# Generate a data set of 200 retirement age values
+x = 5*np.random.randn(200) + 65
+​
+#Plot the histogram with hist() function
+plt.hist(x, bins = 10, edgecolor='black')
+​
+plt.xlabel('Retirement Age')
+plt.ylabel('Frequency of Values')
+plt.title('Histograms in Matplotlib')
+plt.show()
+
+plt.hist(x, bins=5, edgecolor='black')
+plt.xlabel('Retirement Age')
+plt.ylabel('Frequency of Values')
+plt.title('Histograms in Matplotlib')
+plt.show()
+
+# Set seed for reproducability
+np.random.seed(100)
+​
+# Generate a data set of 10000 retirement age values
+x = 5*np.random.randn(10000) + 65
+​
+#Plot the distogram with hist() function
+plt.hist(x, bins=50, edgecolor="black")
+​
+plt.xlabel('Retirement Age')
+plt.ylabel('Frequency of Values')
+plt.title('Histograms in Matplotlib')
+plt.show()
+
+learn open dsc-data-science-env-installation-v2-1
+  File "<ipython-input-25-2eb7c2ac56bc>", line 1
+    learn open dsc-data-science-env-installation-v2-1
+             ^
+SyntaxError: invalid syntax
